@@ -25,7 +25,7 @@ const Login = () => {
 
       if (state === 'Sign up') {
 
-        const {data} = await axios.post('http://localhost:4000/register', {
+        const {data} = await axios.post('https://finalback-tnqhphfs.b4a.run/register', {
           name,
           email,
           password
@@ -40,7 +40,7 @@ const Login = () => {
      
       } else {
 
-            const {data} = await axios.post('http://localhost:4000/login', {
+            const {data} = await axios.post('https://finalback-tnqhphfs.b4a.run/login', {
           email,
           password
         });

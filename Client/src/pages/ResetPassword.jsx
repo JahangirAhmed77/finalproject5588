@@ -24,7 +24,7 @@ const ResetPassword = () => {
     e.preventDefault();
 
     try {
-      const {data} = await axios.post('http://localhost:4000/reset-password', {
+      const {data} = await axios.post('https://finalback-tnqhphfs.b4a.run/reset-password', {
         email,
         newPassword: newpassword
       });
